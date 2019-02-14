@@ -12,8 +12,8 @@ public class DesMain {
 		String cipher = "";
 		try {
 			StringBuilder fileData = new StringBuilder(1000);
-			// File f = new File("C2://Users//Teja//Desktop//cipher.txt");
-			BufferedReader reader = new BufferedReader(new FileReader("D://DES-ciphertext.txt"));
+			String filePath = new File("").getAbsolutePath();
+			BufferedReader reader = new BufferedReader(new FileReader(filePath+"/src/DES/cipher.txt"));
 			char[] buf = new char[1024];
 			int numRead = 0;
 			while ((numRead = reader.read(buf)) != -1) {
