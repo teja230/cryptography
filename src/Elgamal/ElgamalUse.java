@@ -11,6 +11,12 @@ public class ElgamalUse {
 	BigInteger temp = new BigInteger("0");
 	BigInteger temp1 = new BigInteger("0");
 
+	/**
+	 *
+	 * @param y1
+	 * @param y2
+	 * @return
+	 */
 	public String calc(String y1, String y2) {
 		String x = "";
 		BigInteger d1 = new BigInteger(y1);
