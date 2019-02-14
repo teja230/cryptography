@@ -9,7 +9,8 @@ public class VigenereMain {
 		char[] ciph = new char[3000];
 		try {
 			StringBuilder fileData = new StringBuilder(1000);
-			BufferedReader reader = new BufferedReader(new FileReader("Cipher 3.txt"));
+			String filePath = new File("").getAbsolutePath();
+			BufferedReader reader = new BufferedReader(new FileReader(new StringBuilder().append(filePath).append("/src/Vigenere/Cipher 3.txt").toString()));
 			char[] buf = new char[1024];
 			int numRead = 0;
 			while ((numRead = reader.read(buf)) != -1) {

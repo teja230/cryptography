@@ -7,7 +7,8 @@ public class RSAMain {
 		String cipher = "";
 		try {
 			StringBuilder fileData = new StringBuilder(1000);
-			BufferedReader reader = new BufferedReader(new FileReader("D://RSA-ciphertext.txt"));
+			String filePath = new File("").getAbsolutePath();
+			BufferedReader reader = new BufferedReader(new FileReader(new StringBuilder().append(filePath).append("/src/RSA/RSA-ciphertext.txt").toString()));
 			char[] buf = new char[1024];
 			int numRead = 0;
 			while ((numRead = reader.read(buf)) != -1) {

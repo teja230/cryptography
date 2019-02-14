@@ -31,7 +31,7 @@ public class Vigenere {
 				int j;
 				System.out.println("Do You want to try the next method\n 1.Yes\n 2.No");
 				j = input.nextInt();
-				if (j == 1) {
+				if (j == 2) {
 					value = g;
 					break;
 				}
