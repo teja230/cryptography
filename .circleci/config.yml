@@ -1,0 +1,8 @@
+version: 2 # use CircleCI 2.0
+jobs:
+  build:
+
+    working_directory: ~/cryptography
+
+    docker:
+      - image: circleci/openjdk:8-jdk-browsers
